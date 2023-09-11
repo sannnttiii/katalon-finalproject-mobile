@@ -85,9 +85,9 @@ if (amountbri.find()) {
 
         def name = Mobile.getText(findTestObject('Accounts/Transactions/text_namedetailtransaction'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Accounts/Transactions/text_amountdetailtransaction'), 0)
+        Mobile.verifyElementVisible(findTestObject('Accounts/Transactions/text_amountdetaildeposito'), 0)
 
-        def amountdetail = Mobile.getText(findTestObject('Accounts/Transactions/text_amountdetailtransaction'), 0)
+        def amountdetail = Mobile.getText(findTestObject('Accounts/Transactions/text_amountdetaildeposito'), 0)
 		println("NAME AND AMOUNT DETAIL $name $amountdetail")
 
         if (name.toLowerCase().contains('deposit') && amountdetail.toLowerCase().contains('$1000.00')) {

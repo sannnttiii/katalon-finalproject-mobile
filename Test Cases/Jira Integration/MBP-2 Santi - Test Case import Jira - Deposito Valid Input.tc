@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Summary: Santi - Test Case import Jira - Deposito Valid Input
+Description: @Deposito
+
+Feature: Deposito Transaction Feature
+
+As a user, I want to add amount to my account (deposito).
+
+ 
+
+@Valid
+
+Scenario Outline: Deposito with a valid input
+
+When I click menu Make a Deposito
+
+And I choose dropdown Account
+
+And I set text total amount to deposito
+
+Then my total amount should be increase
+
+Examples:
+
+| account | amount |
+
+| BCA | 100000 |</description>
+   <name>MBP-2 Santi - Test Case import Jira - Deposito Valid Input</name>
+   <tag>jira-integration</tag>
+   <integratedEntity>
+      <productName>JIRA</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;jiraIssue&quot;:{&quot;fields&quot;:{&quot;customFields&quot;:{&quot;customfield_10018&quot;:{&quot;hasEpicLinkFieldDependency&quot;:false,&quot;showField&quot;:false,&quot;nonEditableReason&quot;:{&quot;reason&quot;:&quot;PLUGIN_LICENSE_ERROR&quot;,&quot;message&quot;:&quot;The Parent Link is only available to Jira Premium users.&quot;}},&quot;customfield_10019&quot;:&quot;0|i00027:&quot;},&quot;status&quot;:{&quot;id&quot;:10003,&quot;description&quot;:&quot;&quot;,&quot;iconUrl&quot;:&quot;https://ksat08git.atlassian.net/&quot;,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/status/10003&quot;,&quot;name&quot;:&quot;To Do&quot;},&quot;project&quot;:{&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/project/10003&quot;,&quot;key&quot;:&quot;MBP&quot;,&quot;id&quot;:10003,&quot;name&quot;:&quot;Mobile Based Project&quot;},&quot;components&quot;:[],&quot;summary&quot;:&quot;Santi - Test Case import Jira - Deposito Valid Input&quot;,&quot;description&quot;:&quot;@Deposito\n\nFeature: Deposito Transaction Feature\n\nAs a user, I want to add amount to my account (deposito).\n\n \n\n@Valid\n\nScenario Outline: Deposito with a valid input\n\nWhen I click menu Make a Deposito\n\nAnd I choose dropdown Account\n\nAnd I set text total amount to deposito\n\nThen my total amount should be increase\n\nExamples:\n\n| account | amount |\n\n| BCA | 100000 |&quot;,&quot;reporter&quot;:{&quot;emailAddress&quot;:&quot;santi.jati12@gmail.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Santi Trinitasjati&quot;,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/user?accountId\u003d63d88ec8790148a180930b22&quot;},&quot;priority&quot;:{&quot;id&quot;:3,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/priority/3&quot;,&quot;name&quot;:&quot;Medium&quot;},&quot;votes&quot;:{&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/issue/MBP-2/votes&quot;,&quot;votes&quot;:0,&quot;hasVoted&quot;:false},&quot;fixVersions&quot;:[],&quot;subtasks&quot;:[],&quot;labels&quot;:[]},&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/issue/10011&quot;,&quot;key&quot;:&quot;MBP-2&quot;,&quot;id&quot;:10011}}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>54e20e9f-9fe5-49f3-8411-26d822a82134</testCaseGuid>
+</TestCaseEntity>

@@ -116,9 +116,9 @@ if (amountbca.find() && amountbni.find()) {
 
         def name = Mobile.getText(findTestObject('Accounts/Transactions/text_namedetailtransaction'), 0)
 
-        Mobile.verifyElementVisible(findTestObject('Accounts/Transactions/text_amountdetailtransfer'), 0)
+        Mobile.verifyElementVisible(findTestObject('Accounts/Transactions/text_amountdetailtransferpayment'), 0)
 
-        def amountdetail = Mobile.getText(findTestObject('Accounts/Transactions/text_amountdetailtransfer'), 0)
+        def amountdetail = Mobile.getText(findTestObject('Accounts/Transactions/text_amountdetailtransferpayment'), 0)
 
         println("NAME AND AMOUNT DETAIL $name $amountdetail")
 
@@ -137,9 +137,10 @@ if (amountbca.find() && amountbni.find()) {
 
             def namebni = Mobile.getText(findTestObject('Accounts/Transactions/text_namedetailtransaction'), 0)
 
-            Mobile.verifyElementVisible(findTestObject('Accounts/Transactions/text_amountdetailtransfer'), 0)
+            Mobile.verifyElementVisible(findTestObject('Accounts/Transactions/text_amountdetailtransferpayment'), 0)
 
-            def amountdetailbni = Mobile.getText(findTestObject('Accounts/Transactions/text_amountdetailtransfer'), 0)
+            def amountdetailbni = Mobile.getText(findTestObject('Accounts/Transactions/text_amountdetailtransferpayment'), 
+                0)
 
             if (namebni.toLowerCase().contains('transfer') && amountdetailbni.toLowerCase().contains('$500.00')) {
                 KeywordUtil.markPassed('SUCCESS')
@@ -155,4 +156,6 @@ if (amountbca.find() && amountbni.find()) {
     
     println("CHECK SAME VALUE $extractedAmountBni $GlobalVariable.Global_amountbni $extractedAmountBca $GlobalVariable.Global_amountbca")
 }
+
+WebUI.callTestCase(findTestCase('Reusable Testcase/Close app'), [:], FailureHandling.STOP_ON_FAILURE)
 
