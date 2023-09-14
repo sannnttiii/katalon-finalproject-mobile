@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003_Create payment with valid input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b7df438c-4b6b-46c3-81f1-e07579ba0d85</testCaseGuid>
+</TestCaseEntity>
